@@ -1,5 +1,14 @@
 ## esh
 
+### Usage
+
+```js
+import { combine } from 'esh'
+或者
+import * as esh from 'esh'
+esh.combine()
+```
+
 #### API
 
 #### combine(arrays) 合并数组
