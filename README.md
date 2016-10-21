@@ -1,11 +1,11 @@
-## esh
+## esf
 
 ### Usage
 
 ```js
-import { combine } from 'esh'
+import { combine } from 'esf'
 或者
-import * as esh from 'esh'
+import * as esh from 'esf'
 esh.combine()
 ```
 
