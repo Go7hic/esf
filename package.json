@@ -1,6 +1,6 @@
 {
   "name": "esh",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "es6 函数式功能代码集合",
   "main": "index.js",
   "scripts": {
