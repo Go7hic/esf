@@ -1,5 +1,10 @@
 ## esf
 
+
+### Install
+
+npm install esf --save
+
 ### Usage
 
 ```js
