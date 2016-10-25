@@ -65,6 +65,20 @@ export const sum = arr => arr.reduce((a, b) => a + b)
 
 export const product = arr => arr.reduce((a, b) => a * b)
 
+// 处理字符串相关函数
+export const queryUrlParm = (url) => {
+  const pattern = /(\w+)=(\w+)/ig
+  let parames = {}
+  url.replace(pattern, (a, b, c) => parames[b] = c)
+  return parames
+}
+
+export const getUrlParams = (name) => {
+  const reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i")
+  var r = window.location.search ? window.location.search.substr(1).match(reg) : null
+  if (r != null) return unescape(r[2])
+  return null
+}
 
 // function decorators
 export const not = fn => (...args) => !fn(...args)
