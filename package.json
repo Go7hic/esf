@@ -4,7 +4,7 @@
   "description": "es6 函数式功能代码集合",
   "main": "index.js",
   "scripts": {
-    "test": "ava"
+    "test": "ava --tap | tap-colorize"
   },
   "keywords": [
     "es6",
@@ -12,7 +12,35 @@
   ],
   "author": "Go7hic",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "ava": "^0.16.0"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "ava": {
+    "concurrency": 5,
+    "failFast": true,
+    "tap": true,
+    "powerAssert": false,
+    "files": [
+      "test/*.js"
+    ],
+    "source": [
+      "esf.js"
+    ],
+    "require": [
+      "babel-register"
+    ],
+    "babel": {
+      "presets": [
+        "es2015"
+      ]
+    }
+  },
+  "devDependencies": {
+    "tap-colorize": "^1.2.0"
   }
 }

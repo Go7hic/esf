@@ -75,7 +75,7 @@ export const queryUrlParm = (url) => {
 
 export const getUrlParams = (name) => {
   const reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i")
-  var r = window.location.search ? window.location.search.substr(1).match(reg) : null
+  const r = window.location.search ? window.location.search.substr(1).match(reg) : null
   if (r != null) return unescape(r[2])
   return null
 }
