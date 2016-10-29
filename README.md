@@ -106,3 +106,7 @@ esh.combine()
     var mult2 = a => a * 2;
     var addThenMult = pipeline(plus1, mult2);
     addThenMult(5); // => 12
+
+### Test
+
+```npm test```
