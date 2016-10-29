@@ -3,15 +3,15 @@
 
 ### Install
 
-npm install esf --save
+```npm install esf --save```
 
 ### Usage
 
 ```js
 import { combine } from 'esf'
 或者
-import * as esh from 'esf'
-esh.combine()
+import * as esf from 'esf'
+esf.combine()
 ```
 
 #### API
