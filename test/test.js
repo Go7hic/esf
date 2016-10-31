@@ -20,4 +20,12 @@ test('difference', (t) => {
 test('head', (t) => {
   t.truthy(esf.head(['foo', 'bar']), 'foo')
 })
+test('initial', (t) => {
+  t.truthy(esf.initial([1, 2, 3], [3]))
+})
+
+test('intersection', (t) => {
+  t.truthy(esf.intersection([1, 2, 3], [3]))
+})
+
 

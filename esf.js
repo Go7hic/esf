@@ -18,7 +18,7 @@ export const head = arr => arr[0]
 export const initial = arr => arr.slice(0, -1)
 
 export const intersection = (...arrays) =>
-  [...Set([].concat(...arrays))].filter(toFind =>
+  [...new Set([].concat(...arrays))].filter(toFind =>
     arrays.every(arr => arr.some(el => el === toFind))
   )
 
@@ -30,9 +30,9 @@ export const tail = arr => arr.slice(1)
 
 export const toArray = (() => Array.from ? Array.from : obj => [].slice.call(obj))()
 
-export const union = (...arrays) => [...Set([].concat(...arrays))]
+export const union = (...arrays) => [...new Set([].concat(...arrays))]
 
-export const unique = arr => [...Set(arr)]
+export const unique = arr => [...new Set(arr)]
 
 export const without = (arr, ...values) => arr.filter(el => !values.some(exclude => el === exclude))
 
