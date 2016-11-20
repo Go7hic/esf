@@ -1,0 +1,6 @@
+{
+  "name": "Esf",
+  "tagline": "ES6+  helpful function",
+  "body": "## esf\r\n\r\n\r\n### Install\r\n\r\n```npm install esf --save```\r\n\r\n### Usage\r\n\r\n```js\r\nimport { combine } from 'esf'\r\n或者\r\nimport * as esf from 'esf'\r\nesf.combine()\r\n```\r\n\r\n### API\r\n\r\n[API DOC](https://github.com/dyygtfx/esf/wiki/API-Doc)\r\n\r\n### Test\r\n\r\n```npm test```\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
