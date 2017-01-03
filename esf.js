@@ -9,7 +9,7 @@ export const contains = (() => Array.prototype.includes
 )()
 
 export const difference = (arr, ...others) => {
-  var combined = [].concat(...others)
+  const combined = [].concat(...others)
   return arr.filter(el => !combined.some(exclude => el === exclude))
 }
 
@@ -80,17 +80,24 @@ export const getUrlParams = (name) => {
   return null
 }
 
+
+// ………………………………………………………………………………………………………… 一些用于判断的函数…………………………………………………………………………………………………………
+export const isString = value => toString.call(value) === '[object String]'
+export const isUndefined = value => value === void 0
+export const isObject = value => Object(value) === value
+export const isNumber = value => is.not.nan(value) && toString.call(value) === '[object Number]'
+
+
 // function decorators
 export const not = fn => (...args) => !fn(...args)
 
-export const maybe = fn =>
-  (...args) => {
-    if (args.length < fn.length || args.some(arg => arg == null)) return
-    return fn(...args)
-  }
+export const maybe = fn => (...args) => {
+  if (args.length < fn.length || args.some(arg => arg == null)) return
+  return fn(...args)
+}
 
 export const once = (fn) => {
-  var done = false
+  let done = false
   return (...args) => {
     if (done) return
     done = true

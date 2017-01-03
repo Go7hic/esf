@@ -28,6 +28,7 @@
             "string": true,
             "allow": [/* "!!", "~", "*", "+" */]
         }],
-    "semi": [2, "never"]
+    "semi": [2, "never"],
+    "no-void": [1]
   }
 }
