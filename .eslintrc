@@ -29,6 +29,7 @@
             "allow": [/* "!!", "~", "*", "+" */]
         }],
     "semi": [2, "never"],
-    "no-void": [1]
+    "no-void": [1],
+    "no-self-compare": [1]
   }
 }
