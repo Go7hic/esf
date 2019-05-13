@@ -13,7 +13,7 @@
   "author": "Go7hic",
   "license": "MIT",
   "dependencies": {
-    "ava": "^0.16.0"
+    "ava": "^1.4.1"
   },
   "babel": {
     "presets": [
