@@ -13,7 +13,8 @@
   "author": "Go7hic",
   "license": "MIT",
   "dependencies": {
-    "ava": "^0.16.0"
+    "ava": "^0.16.0",
+    "typescript": "^3.5.2"
   },
   "babel": {
     "presets": [
