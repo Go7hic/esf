@@ -5,7 +5,7 @@
 export const queryUrlParm = (url: string) => {
   const pattern = /(\w+)=(\w+)/ig
   const parames: any = {}
-  url.replace(pattern, (a: any, b: string | number, c: any) => parames[b] = c)
+  url.replace(pattern, (_a: any, b: string | number, c: any) => parames[b] = c)
   return parames
 }
 
