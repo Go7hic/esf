@@ -9,7 +9,9 @@
 npm install --save esf
 ```
 
+## Docs
 
+https://go7hic.github.io/esf/
 
 ## License
 
